@@ -1,0 +1,283 @@
+* { margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+
+body { min-height: 100dvh; }
+input, button, textarea, select { font: inherit; }
+
+p { text-wrap: pretty; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+
+img, video, svg { height: auto; max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+#app {
+  font-family: "Archivo";
+}
+
+.vs-top-banner {
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 6vh; 
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  align-items: center;
+}
+
+.banner-content span {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-family: "Archivo";
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  color: #E02220;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-15%);
+  }
+}
+
+.banner-content::after {
+  content: "milfshakes.es";
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-family: "Archivo";
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  color: #E02220;
+  padding-right: 20px;
+}
+
+.titleContentPage {
+  background-color: #E02220;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.textContent {
+  text-align: center;
+  color: #fff;
+}
+
+.textContent h2 {
+  font-size: 4vw;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.textContent h1 {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 800;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  font-size: 6vw;
+}
+
+.textContent h1 a {
+  color: #fff;
+}
+
+.textContent p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2vw;
+  line-height: 39px;
+}
+
+.imagenMilfoTitle {
+  width: 300px;
+  transform: rotate(180deg);
+}
+
+.imgLayoutTitle {
+  position: absolute;
+}
+
+.dropsSection {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titleGrid {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3vw;
+  line-height: 96px;
+  color: #E02220;
+  margin-bottom: 20px;
+}
+
+.gridContainerDrops {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 80%;
+}
+
+.dropCard {
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.dropCardImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.descriptionCard {
+  color: #fff;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 27px;
+}
+
+.dropCard:hover {
+  background-color: #E02220;
+}
+
+.textContentCard {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropCard:hover .textContentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hcard {
+  font-size: 10vw;
+}
+
+.imgCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropCard:hover .imgCard {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.textCard {
+  color: #000;
+}
+
+.redirectCardDrop {
+  text-decoration: none;
+}
+
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  padding: 0px 20px;
+  margin-top: 30px;
+}
+
+.socialMedia, .iconRedirect, .originalPage {
+  display: flex;
+  align-items: center;
+}
+
+.iconRedirect, .originalPage {
+  gap: 5px;
+}
+
+.socialMedia p {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #E02220;
+}
+
+.iconRedirect a {
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.originalPage img {
+  width: 30px;
+}
+
+.originalPage a {
+  text-decoration: none;
+  color: #E02220;
+  font-style: italic;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
