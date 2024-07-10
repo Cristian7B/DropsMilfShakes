@@ -37,3 +37,39 @@ Esta es una página web creada para practicar mis conocimientos en React. La pá
 Para ejecutar la aplicación en modo de desarrollo:
 ```sh
 npm start
+```
+
+## Estructura del Proyecto
+    ```sh
+    src/
+    │
+    ├── assets/               # Imágenes y otros recursos
+    ├── components/           # Componentes reutilizables
+    │   ├── Header.jsx
+    │   ├── Footer.jsx
+    │   ├── GridContent.jsx
+    │   └── Title.jsx
+    ├── App.jsx               # Componente principal de la aplicación
+    ├── App.css               # Estilos de la aplicación
+    └── index.js              # Punto de entrada de la aplicación
+    ```
+
+## Drops
+
+La lista de drops se encuentra en el archivo App.jsx. Cada drop tiene la siguiente estructura:
+    ```sh
+    const drops = [
+      {
+        imgDrop: "drop1.jpg",
+        titleDrop: "HotMilfs",
+        descriptionDrop: "Primer drop de Mlfshks",
+        numberOfDrop: "001",
+        linkDrop: "https://www.instagram.com/p/ClZgIwTKIpN/?img_index=1"
+      },
+      // Más drops aquí
+    ];
+    ```
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si tienes alguna idea o mejora, por favor abre un issue o envía un pull request.
