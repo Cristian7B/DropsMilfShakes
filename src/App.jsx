@@ -3,6 +3,8 @@ import { Footer } from "./components/Footer";
 import { GridContent } from "./components/GridContent";
 import { Title } from "./components/Title";
 
+import { Analytics } from "@vercel/analytics/react"
+
 import drop1 from './assets/drop1.jpg';
 import drop2 from './assets/drop2.jpg';
 import drop3 from './assets/drop3.jpg';
@@ -123,6 +125,7 @@ function App() {
   ]
   return (
     <div id="app">
+      <Analytics />
       <Header text="milfshakes.es"/>
       <Title/>
       <section className="dropsSection">
