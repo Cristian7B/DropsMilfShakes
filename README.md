@@ -1,6 +1,6 @@
 # Milfshakes Drops Web
 
-![Portada de la Web](ruta/a/la/imagen/portada.jpg)
+![Portada de la Web](./src/assets/portada.jpg)
 
 ## Descripción
 
