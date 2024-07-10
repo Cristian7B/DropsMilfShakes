@@ -54,22 +54,6 @@ npm start
     └── index.js              # Punto de entrada de la aplicación
     ```
 
-## Drops
-
-La lista de drops se encuentra en el archivo App.jsx. Cada drop tiene la siguiente estructura:
-    ```sh
-    const drops = [
-      {
-        imgDrop: "drop1.jpg",
-        titleDrop: "HotMilfs",
-        descriptionDrop: "Primer drop de Mlfshks",
-        numberOfDrop: "001",
-        linkDrop: "https://www.instagram.com/p/ClZgIwTKIpN/?img_index=1"
-      },
-      // Más drops aquí
-    ];
-    ```
-
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si tienes alguna idea o mejora, por favor abre un issue o envía un pull request.
