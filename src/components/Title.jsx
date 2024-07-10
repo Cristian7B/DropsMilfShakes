@@ -2,8 +2,6 @@ import imgMilfo from "../assets/milfo.png"
 export function Title() {
     return (
         <div className="titleContentPage">
-            {/* <img className="imgLayoutTitle" id="imgLayoutTitle1" src={imgChunky} alt="Imagen zapatillas chunky"/>
-            <img className="imgLayoutTitle" id="imgLayoutTitle2" src={exp013} alt="Experimento 013 imagen"/> */}
             <div className="textContent">
                 <h2>
                     Todos los drops de

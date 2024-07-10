@@ -20,7 +20,7 @@ export function GridContent({linkDrop, imgDrop, titleDrop, descriptionDrop, numb
                 className={`dropCard ${hover ? 'hovered':''}`} 
             >
                 <div className="dropCardImg">
-                    <img className={`imgCard ${hover ? 'hovered':''}`} src={`../assets/${imgDrop}`} alt={titleDrop} />
+                    <img className={`imgCard ${hover ? 'hovered':''}`} src={imgDrop} alt={titleDrop} />
                 </div>
                 <div className={`textContentCard ${hover ? 'hovered':''}`}>
                     <h1 className="hcard">{numberOfDrop}</h1>
