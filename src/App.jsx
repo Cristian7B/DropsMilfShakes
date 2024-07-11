@@ -54,7 +54,7 @@ function App() {
     },
     {
       imgDrop: drop5,
-      titleDrop:"Rampa para deportistas",
+      titleDrop:"Rampa Mlfshks",
       descriptionDrop:"Drop subastado 1/1",
       numberOfDrop: "005",
       linkDrop: "https://www.instagram.com/p/CthBnOYt-II/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
@@ -123,11 +123,14 @@ function App() {
       linkDrop: "https://www.instagram.com/p/C9Hq6drMOn4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     },
   ]
+
   return (
+
     <div id="app">
       <Analytics />
       <Header text="milfshakes.es"/>
       <Title/>
+
       <section className="dropsSection">
           <div className="titleGrid">
               <h1>
@@ -148,10 +151,12 @@ function App() {
             ))
           }
           </div>
-      </section>  
+      </section> 
+
       <Footer/>
     </div>
   )
+
 }
 
 export default App
